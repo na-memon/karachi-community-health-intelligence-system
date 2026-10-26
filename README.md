@@ -1,86 +1,73 @@
 # 🏥 Karachi Community Health Intelligence System (K-CHIS)
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=flat-square&logo=streamlit&logoColor=white)
+![Pandas](https://img.shields.io/badge/Data-Pandas%2FNumPy-orange?style=flat-square&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-yellow?style=flat-square&logo=scikit-learn&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
+
 > A comprehensive, data-driven epidemiological surveillance, statistical testing, and predictive machine learning platform designed to analyze community health vulnerabilities in Karachi, Pakistan.
 
 ---
 
-## 📌 Project Overview
-The **Karachi Community Health Intelligence System (K-CHIS)** transforms raw public health survey data into actionable health intelligence. This project integrates automated exploratory data analysis (EDA), multi-section KPI reporting, rigorous inferential statistics (Chi-Square and Pearson correlation), and predictive machine learning modeling to uncover socioeconomic, nutritional, and chronic disease trends.
+## 📊 Executive Summary & Key Metrics
+
+The **Karachi Community Health Intelligence System (K-CHIS)** transforms primary community health survey data into actionable public health intelligence. Designed for epidemiologists, healthcare administrators, and policymakers, this platform provides multi-dimensional visibility into urban health disparities across a surveyed cohort of **N = 472**.
+
+| Public Health Indicator | Prevalence Rate | Priority Level |
+| :--- | :---: | :---: |
+| **Overall Malnutrition** | **58.9%** | 🔴 Critical Priority |
+| **Underweight Status (BMI < 18.5)** | **46.0%** | 🔴 Critical Vulnerability |
+| **Hypertension (High Blood Pressure)** | **19.1%** | 🟠 High Risk |
+| **Dyspepsia & Gastrointestinal Issues** | **17.2%** | 🟡 Moderate Risk |
+| **Cancer Indicators & Screenings** | **16.1%** | 🟡 Elevated |
+| **Diabetes Mellitus** | **10.2%** | 🟡 Elevated |
 
 ---
 
-## 📂 Project Architecture & Directory Structure
+## 🗂️ Project Architecture & Directory Structure
+
 ```text
 karachi-community-health-intelligence-system/
 │
-├── data/                               # Raw and cleaned surveillance datasets
-│   ├── Karachi Community Health Surveillance Analytics System.xlsx
+├── dashboard/               # Interactive 6-Page Streamlit Application
+│   └── app.py               # Main application entry point
+│
+├── data/                    # Cleaned and validated survey datasets
 │   └── Karachi Community Health Surveillance Analytics System_cleaned.xlsx
 │
-├── notebooks/                          # Jupyter Notebook pipeline (01 to 05)
+├── notebooks/               # Jupyter Notebooks for End-to-End Pipeline
 │   ├── 01_data_cleaning.ipynb
 │   ├── 02_eda_visualization.ipynb
 │   ├── 03_health_intelligence_kpis.ipynb
 │   ├── 04_statistical_analysis.ipynb
 │   └── 05_executive_summary.ipynb
 │
-├── src/                                # Modularized Python source code
-│   ├── preprocessing.py
-│   └── utils.py
+├── visuals/                 # 13 Publication-Ready Exported Visual Assets (Fig 1 - Fig 13)
+│   ├── fig1_age_distribution.png
+│   ├── fig2_bmi_classification.png
+│   ├── ... (Figures 3 through 13)
 │
-├── visuals/                            # Exported high-resolution figures (Figs 1–13)
-│   ├── fig1_to_fig6_*.png
-│   ├── fig7_disease_prevalence.png
-│   ├── fig8_physical_activity.png
-│   ├── fig9_healthcare_visits.png
-│   ├── fig10_medication_use.png
-│   ├── fig11_income_by_bmi.png
-│   ├── fig12_age_vs_bmi_regplot.png
-│   └── fig13_confusion_matrix.png
-│
-├── reports/                            # Formal documentation & executive briefs
-│   └── final_health_intelligence_report.md
-│
-├── dashboard/                          # Interactive Streamlit Web Application
-│   └── app.py
-│
-├── requirements.txt                    # Project dependencies
-└── README.md                           # Project documentation
+├── reports/                 # Comprehensive executive documentation & summaries
+├── src/                     # Core helper modules & transformation scripts
+├── requirements.txt         # Project Python dependencies
+└── LICENSE                  # MIT Open-Source License 
+```
+## 🚀 Key Analytic Modules & Visuals
+The interactive dashboard (dashboard/app.py) embeds 13 publication-ready analytical figures categorized into 6 specialized pages:
 
+Executive Overview: High-level system architecture, cohort summaries, and primary KPI cards.
 
-## 📊 Key Findings & Epidemiological Insights
-Demographic Baseline: Analyzed a surveillance cohort of 472 participants across Karachi, capturing detailed demographic, socioeconomic, and lifestyle metrics.
+Demographic & Population Profiling: Age distribution, gender representation, educational tiers, and household income distribution (Fig 1 - Fig 5).
 
-Nutritional Vulnerability: Identified an overall malnutrition prevalence rate of 58.9%, with a striking 46.0% underweight rate among vulnerable groups.
+Nutritional & Malnutrition Assessment: Detailed BMI classifications and socioeconomic stratification (Fig 2, Fig 11).
 
-Chronic Disease Morbidity:
+Chronic Disease Surveillance: Non-communicable disease prevalence and prescribed medication usage (Fig 7, Fig 10).
 
-Hypertension emerged as the leading chronic condition at 19.1% prevalence.
+Behavioral & Lifestyle Risk Mapping: Substance habits, gutka/tobacco consumption, physical activity index, and healthcare facility visit frequency (Fig 8, Fig 9).
 
-Dyspepsia recorded high gastrointestinal incidence at 17.2%.
-
-Cancer indicators registered at 16.1%, while established diabetes stands at 10.2%.
-
-Statistical Correlations: Chi-square testing confirmed a statistically significant relationship between household income brackets and nutritional/BMI outcomes.
-
-Predictive Modeling: A trained Logistic Regression model (with standardized scaling) successfully predicted baseline malnutrition risk factors across multi-variable demographic and lifestyle features.
-
-## 🛠️ Tech Stack & Libraries
-Language: Python 3.x
-
-Data Manipulation & Analysis: Pandas, NumPy
-
-Statistical Testing: SciPy (chi2_contingency, pearsonr)
-
-Machine Learning: Scikit-Learn (LogisticRegression, StandardScaler, metrics evaluation)
-
-Data Visualization: Seaborn, Matplotlib
-
-Interactive Dashboard: Streamlit
-
-Environment: VS Code, Git / GitHub
+Inferential Statistics & Machine Learning: Chi-square tests, Pearson correlations, age-BMI trajectory regression (Fig 12), and predictive Logistic Regression performance metrics (Accuracy: 78.4%, AUC-ROC: 0.84) (Fig 13).
 
 ## Author
 
 Dr. Najeeb Akhter
-PhD | Researcher | Public Health | Data Analytics | Monitoring & Evaluation
