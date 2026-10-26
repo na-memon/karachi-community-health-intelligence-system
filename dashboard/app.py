@@ -15,8 +15,14 @@ st.set_page_config(
 # --- LOAD DATA ---
 @st.cache_data
 def load_data():
-  # Adjust path relative to dashboard folder
-  path = "../data/Karachi Community Health Surveillance Analytics System_cleaned.xlsx"
+  # Try root path first (used by Streamlit Cloud)
+  path = "data/Karachi Community Health Surveillance Analytics System_cleaned.xlsx"
+  if not os.path.exists(path):
+    # Fallback to local relative path if run from dashboard folder
+    path = (
+        "../data/Karachi Community Health Surveillance Analytics"
+        " System_cleaned.xlsx"
+    )
   return pd.read_excel(path)
 
 
