@@ -4,8 +4,6 @@ import streamlit as st
 
 # Determine the directory where app.py resides
 BASE_DIR = Path(__file__).resolve().parent
-
-# Build absolute path to data file (moves 1 folder up to root, then into data/)
 DATA_PATH = (
     BASE_DIR.parent
     / "data"
@@ -16,10 +14,18 @@ DATA_PATH = (
 @st.cache_data
 def load_data():
   if not DATA_PATH.exists():
-    raise FileNotFoundError(
-      f"Dataset not found at expected path: {DATA_PATH}"
-    )
+    return None
   return pd.read_excel(DATA_PATH)
 
 
 df = load_data()
+
+# Graceful error handling so the server never crashes
+if df is None:
+  st.error(
+      "⚠️ **Dataset File Missing on GitHub Repository!**\n\nStreamlit Cloud"
+      f" could not find the Excel file at:\n`{DATA_PATH}`\n\n**How to"
+      " fix:** Make sure your cleaned Excel file is committed and pushed inside"
+      " the `data/` folder on your GitHub repository."
+  )
+  st.stop()
