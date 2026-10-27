@@ -1,7 +1,7 @@
 # 🏥 Karachi Community Health Intelligence System (K-CHIS): Final Epidemiological & Analytics Report
 
 **Author / Lead Data Scientist:** Project K-CHIS Team  
-**Target Region:** Kemari, Karachi, Sindh, Pakistan  
+**Target Region:** Kemari district, Karachi, Sindh, Pakistan  
 **Dataset Scope:** $N = 472$ Community Surveillance Participants ($40$ Attributes)  
 **Status:** Production-Ready / GitHub Portfolio Publication  
 
@@ -11,7 +11,7 @@
 
 The **Karachi Community Health Intelligence System (K-CHIS)** was established to transition raw public health survey records into an automated, data-driven intelligence pipeline. Operating within a modular Python environment (`pandas`, `scipy`, `scikit-learn`, `seaborn`), this system integrates rigorous exploratory data analysis (EDA), multi-section KPI calculations, inferential hypothesis testing, and machine learning risk modeling. 
 
-The primary objective is to evaluate community health vulnerabilities across Karachi—specifically targeting nutritional imbalances, chronic disease prevalence, lifestyle risk factors, and socioeconomic health determinants—to support evidence-based public health interventions.
+The primary objective is to evaluate community health vulnerabilities across Kemari district, Karachi—specifically targeting nutritional imbalances, chronic disease prevalence, lifestyle risk factors, and socioeconomic health determinants—to support evidence-based public health interventions.
 
 ---
 
