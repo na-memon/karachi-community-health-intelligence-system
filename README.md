@@ -6,7 +6,7 @@
 ![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-yellow?style=flat-square&logo=scikit-learn&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
 
-> A comprehensive, data-driven epidemiological surveillance, statistical testing, and predictive machine learning platform designed to analyze community health vulnerabilities in Karachi, Pakistan.
+> A comprehensive, data-driven epidemiological surveillance, statistical testing, and predictive machine learning platform designed to analyze community health vulnerabilities in Kemari district, Karachi, Pakistan.
 
 ---
 
@@ -67,6 +67,22 @@ Chronic Disease Surveillance: Non-communicable disease prevalence and prescribed
 Behavioral & Lifestyle Risk Mapping: Substance habits, gutka/tobacco consumption, physical activity index, and healthcare facility visit frequency (Fig 8, Fig 9).
 
 Inferential Statistics & Machine Learning: Chi-square tests, Pearson correlations, age-BMI trajectory regression (Fig 12), and predictive Logistic Regression performance metrics (Accuracy: 78.4%, AUC-ROC: 0.84) (Fig 13).
+
+This repository contains the cleaned dataset used for research analytics regarding community health surveillance in Karachi.
+
+## Dataset Description
+- **File:** `Karachi Community Health Surveillance Analytics System_cleaned.xlsx`
+- **Rows:** 472
+- **Columns:** 40 (covering demographics, anthropometric measurements, lifestyle routines, dietary servings, and chronic health conditions).
+- **Anonymization:** All personal identifiers (PII) have been completely removed.
+
+## Citation
+If you use this dataset in your research, please cite our published journal article:
+> * Dr S.A.M et al., 2025. Assessment of malnutrition and its determinant among the elderly population of Kemari, Pakistan. Journal of Population Therapeutics and Clinical Pharmacology, 32(4), 1182-1190. https://doi.org/10.53555/r5b13x15*
+
+## License
+This dataset is licensed under the **Creative Commons Attribution 4.0 International (CC-BY 4.0)** license. See the [LICENSE](LICENSE) file for details.
+
 
 ## Author
 
