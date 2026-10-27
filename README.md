@@ -54,7 +54,7 @@ karachi-community-health-intelligence-system/
 └── LICENSE                  # MIT Open-Source License 
 ```
 ## 🚀 Key Analytic Modules & Visuals
-The interactive dashboard (dashboard/app.py) embeds 13 publication-ready analytical figures categorized into 6 specialized pages:
+The interactive dashboard (dashboard/app.py) embeds 13 publication-ready analytical figures categorized into 6 specialized pages https://karachi-community-health-intelligence-system-dlmsv2v62aavpa4ej.streamlit.app/: 
 
 Executive Overview: High-level system architecture, cohort summaries, and primary KPI cards.
 
