@@ -1,10 +1,11 @@
 # 🏥 Karachi Community Health Intelligence System (K-CHIS)
 
+[![DOI](https://zenodo.org/badge/1434373947.svg)](https://doi.org/10.5281/zenodo.24117720)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=flat-square&logo=streamlit&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Data-Pandas%2FNumPy-orange?style=flat-square&logo=pandas&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-yellow?style=flat-square&logo=scikit-learn&logoColor=white)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
+[![License: CC BY 4.0](https://shields.io)](https://creativecommons.org)
 
 > A comprehensive, data-driven epidemiological surveillance, statistical testing, and predictive machine learning platform designed to analyze community health vulnerabilities in Kemari district, Karachi, Pakistan.
 
