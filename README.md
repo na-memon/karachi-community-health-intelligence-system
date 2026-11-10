@@ -78,8 +78,15 @@ This repository contains the cleaned dataset used for research analytics regardi
 - **Anonymization:** All personal identifiers (PII) have been completely removed.
 
 ## Citation
-If you use this dataset in your research, please cite our published journal article:
-> * Dr S.A.M et al., 2025. Assessment of malnutrition and its determinant among the elderly population of Kemari, Pakistan. Journal of Population Therapeutics and Clinical Pharmacology, 32(4), 1182-1190. https://doi.org/10.53555/r5b13x15*
+
+If you use this software or dataset in your research, please cite **both** the original published study and this analytical software repository:
+
+**1. Original Published Study & Dataset:**
+> Dr. S.A.M. et al. (2025). Assessment of malnutrition and its determinant among the elderly population of Kemari, Pakistan. *Journal of Population Therapeutics and Clinical Pharmacology*, *32*(4), 1182–1190. https://doi.org/10.53555/r5b13x15
+
+**2. Analysis Platform & Code (Zenodo Archive):**
+> [Akhter Najeeb]. (2026). *Karachi Community Health Intelligence System (K-CHIS)* (Version v1.0.0) [Computer software]. Zenodo. [https://doi.org](https://doi.org/10.5281/zenodo.24117720)
+
 
 ## License
 This dataset is licensed under the **Creative Commons Attribution 4.0 International (CC-BY 4.0)** license. See the [LICENSE](LICENSE) file for details.
